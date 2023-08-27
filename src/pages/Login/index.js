@@ -73,8 +73,8 @@ const styles = StyleSheet.create({
     },
     userInfoContainer: {
         flex: 1,
-        justifyContent: 'center',
-        marginTop: 50
+        justifyContent: 'flex-end',
+        marginBottom: 100
     },
     optionsContainer: {
         flexDirection: 'row',
