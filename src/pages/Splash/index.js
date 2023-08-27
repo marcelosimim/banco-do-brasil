@@ -1,11 +1,16 @@
 import { View, Image, StyleSheet } from "react-native";
-import React from "react";
+import React, { useEffect } from "react";
 import Colors from "../../utilities/Colors";
+import Images from "../../utilities/Images";
 
-export default function Splash() {
+export default function Splash( { navigation }) {
+  useEffect(() => {
+    setTimeout(function(){navigation.navigate('Login')}, 2000)
+  }, []);
+
   return (
     <View style={styles.container}>
-        <Image style={styles.content} source={require('../../../assets/logo_bb.png')}/>
+        <Image style={styles.content} source={Images.LOGO_YELLOW}/>
     </View>
   );
 }
